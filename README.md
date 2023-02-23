@@ -1,1 +1,1 @@
-# cs-ihu-landing.github.io
+# cs-ihu-landing-page
