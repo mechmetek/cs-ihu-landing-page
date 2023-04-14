@@ -1,14 +1,776 @@
 <!DOCTYPE html>
-<html>
+<html lang="GR">
 
 <head>
-  <title>CS IHU Landing Page</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>IHU-Landing Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome CSS-->
+  <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Linear icons CSS-->
+  <link href="assets/linearicons/css/icon-font.min.css" rel="stylesheet">
+  <!-- Animate CSS -->
+  <link href="assets/animate/animate.css" rel="stylesheet">
+  <!-- Portfolio CSS -->
+  <link href="assets/css/ionicons.min.css" rel="stylesheet">
+  <link href="assets/css/magnific-popup.css" rel="stylesheet">
+  <!-- Owl Carousel -->
+  <link href="assets/owl-carousel/css/owl.carousel.css" rel="stylesheet">
+  <link href="assets/owl-carousel/css/owl.theme.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
 <body>
+  <!-- Pre Loader -->
+  <div id="loader"></div>
+  <!-- Header -->
+  <header id="home" class="welcome-hero-area">
+    <div class="header-top-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <!-- START LOGO -->
+            <div class="logo"> <a href="index.html"><img src="images/cs-logo.png" alt="Study"></a> </div>
+            <!-- END LOGO -->
+          </div>
+          <div class="col-md-9">
+            <!-- START MAIN MENU -->
+            <nav class="navbar navbar-default">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                  data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle
+                    navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span
+                    class="icon-bar"></span> </button>
+                <!-- Logo -->
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a class="smoth-scroll" href="#home">ΑΡΧΙΚΗ</a></li>
+                  <li><a class="smoth-scroll" href="#about">ΣΧΕΤΙΚΑ</a></li>
+                  <li><a class="smoth-scroll" href="#lab">ΕΡΓΑΣΤΗΡΙΑ</a></li>
+                  <li><a class="smoth-scroll" href="#studies">ΣΠΟΥΔΕΣ</a></li>
+                  <li><a class="smoth-scroll" href="#portfolio">ΠΟΡΤΦΟΛΙΟ</a></li>
+                  <!-- <li><a class="smoth-scroll" href="#">ΑΝΑΚΟΙΝΩΣΕΙΣ</a></li>
+                  <li><a class="smoth-scroll" href="#">ΕΓΓΡΑΦΕΣ</a></li> -->
+                  <li><a class="smoth-scroll" href="#contact">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+                </ul>
+              </div>
+              <!-- /.navbar-collapse -->
+            </nav>
+            <!-- END MAIN MENU -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Start Slider Area -->
+    <div class="home-slider-area">
+      <div id="welcome-slide-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#welcome-slide-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#welcome-slide-carousel" data-slide-to="1"></li>
+          <li data-target="#welcome-slide-carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <!-- Start Single Slider Item -->
+          <div class="item active">
+            <div class="single-slide-item slide-1">
+              <div class="single-slide-item-table">
+                <div class="single-slide-item-table-cell">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h2>ΤΜΗΜΑ ΠΛΗΡΟΦΟΡΙΚΗΣ</h2>
+                        <p>Διεθνές Πανεπιστήμιο της Ελλάδος - Κόμβος Καβάλας</p>
+                        <a class="slide-btn smoth-scroll" href="#about">ΠΛΗΡΟΦΟΡΙΕΣ</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Slider Item-->
+          <!-- Start Single Slider Item-->
+          <div class="item">
+            <div class="single-slide-item slide-2">
+              <div class="single-slide-item-table">
+                <div class="single-slide-item-table-cell">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h2>ΕΡΓΑΣΤΗΡΙΑ</h2>
+                        <p>Περιγραφή</p>
+                        <a class="slide-btn smoth-scroll" href="#lab">ΕΡΓΑΣΤΗΡΙΑ</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Slider Item -->
+          <!-- Start Single Slider Item-->
+          <div class="item">
+            <div class="single-slide-item slide-3">
+              <div class="single-slide-item-table">
+                <div class="single-slide-item-table-cell">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h2>ΣΠΟΥΔΕΣ</h2>
+                        <p>Περιγραφή</p>
+                        <a class="slide-btn smoth-scroll" href="#studies">ΣΠΟΥΔΕΣ</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Slider Item -->
+          <a class="left welcome-control" href="#welcome-slide-carousel" role="button" data-slide="prev"><i
+              class="fa fa-angle-left"></i></a> <a class="right welcome-control" href="#welcome-slide-carousel"
+            role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- End Slider Area -->
+  </header>
 
-  <h1>Website Is Under Construction!</h1> 
+  <!-- Callouts Start -->
+  <div class="callouts-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="callouts-inner">
+          <div class="col-sm-4">
+            <div class="message-description">
+              <div class="row">
+                <div class="col-sm-9">
+                  <h4>Πιστοποιημένο Πρόγραμμα Σπουδών</h4>
+                  <!-- <p>Από την Εθνική Αρχή Ανώτατης Εκπαίδευσης</p>-->
+                </div>
+                <div class="col-sm-3"> <i class="fa fa-graduation-cap" aria-hidden="true"></i> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="message-description">
+              <div class="row">
+                <div class="col-sm-9">
+                  <h4>Εξειδικευμένο Προσωπικό</h4>
+                  <!-- <p>Εξειδικευμένο προσωπικό διδασκαλίας.</p>-->
+                </div>
+                <div class="col-sm-3"> <i class="fa fa-user" aria-hidden="true"></i> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="message-description">
+              <div class="row">
+                <div class="col-sm-9">
+                  <h4>Επιστημονική Βιβλιοθήκη</h4>
+                  <!-- <p>Με τεράστια ποικίλια απο επιστημονικα συγγράματα.</p>-->
+                </div>
+                <div class="col-sm-3"> <i class="fa fa-book" aria-hidden="true"></i> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Callouts -->
 
+  <!-- About Start -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>ΣΧΕΤΙΚΑ</h2>
+        <p style="text-align:justify;"> <span>Το Τμήμα Πληροφορικής ιδρύθηκε το 2019 (N. 4610/2019)
+            ως Τμήμα της Σχολής Θετικών Επιστημών του Διεθνούς
+            Πανεπιστημίου της Ελλάδος (Πανεπιστημιούπολη Καβάλας), με σκοπό να θεραπεύσει το γνωστικό αντικείμενο της
+            Πληροφορικής. Αποτελεί συνέχεια του ήδη καταξιωμένου σε Ελληνικό και Διεθνές επίπεδο Τμήματος Μηχανικών
+            Πληροφορικής του Τεχνολογικού Εκπαιδευτικού Ιδρύματος Ανατολικής Μακεδονίας και Θράκης για την ποιότητα των
+            σπουδών που προσέφερε και του παραγόμενου έργου του. Η πλούσια εκπαιδευτική και ερευνητική εμπειρία των
+            μελών
+            ΔΕΠ του Τμήματος με την διαρκή ενασχόληση τους σε ερευνητικά και αναπτυξιακά προγράμματα συναφή με τα
+            γνωστικά
+            τους αντικείμενα, εγγυάται την επιτυχημένη πορεία του Τμήματος και των αποφοίτων του.</span></p>
+        <span class="line"></span>
+      </div>
+
+      <link href="css/tabs.css" rel="stylesheet">
+
+      <!-- Tabs -->
+      <div class="about-tabs">
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#tab1">ΣΤΟΧΟΙ ΤΜΗΜΑΤΟΣ</a></li>
+          <li><a data-toggle="tab" href="#tab2">ΠΟΛΙΤΙΚΗ ΠΟΙΟΤΗΤΟΣ ΤΜΗΜΑΤΟΣ</a></li>
+          <li><a data-toggle="tab" href="#tab3">ΟΡΓΑΝΩΣΗ</a></li>
+          <li><a data-toggle="tab" href="#tab4">ΕΠΑΓΓΕΛΜΑΤΙΚΗ ΑΠΟΚΑΤΑΣΤΑΣΗ</a></li>
+        </ul>
+
+        <div class="tab-content">
+          <div id="tab1" class="tab-pane fade in active">
+            <h3 style="text-align: center;">ΣΤΟΧΟΙ ΤΜΗΜΑΤΟΣ</h3>
+            <p style="text-align: justify;">Το Τμήμα Πληροφορικής ανήκει στην Σχολή Θετικών
+              Επιστημών του Διεθνούς Πανεπιστη­μίου της Ελλάδος.
+              Δημιουργήθηκε το 2019 με το Νόμο 4610 (ΦΕΚ 70Α/7-5-2019) μετά τη συνένωση τεσσάρων ιδρυμάτων στη Βόρεια
+              Ελλάδα.
+              Το Τμήμα διοργανώνει προπτυχιακό πρόγραμμα σπουδών που θεραπεύει τα αντικείμενα της Πληροφορ­ικής και των
+              Υπολογιστών. Παρέχει προπτυχιακό πρόγραμμα σπουδών με ένα σημαντικό αριθμό σύγχρονων μαθημάτων. Από τα
+              μαθήματα αυτά ένας μεγάλος αριθμός, υποχρεωτικά και επιλογής, είναι μαθήματα του 6ου, του 7ου και το 8ου
+              εξαμήνου από τα οποία οι φοιτητές μπορούν να επιλέξουν μαθήματα ανάλογα με τα ενδιαφέροντά τους.
+              Το Τμήμα επίσης παρέχει σε όλους τους αποφοίτους του Παιδαγωγική και Εκπαιδευτική Επάρκεια.
+              Στο Τμήμα λειτουργεί Πρόγραμμα Μεταπτυχιακών Σπουδών με τίτλο «Προηγμένες Τεχνολογίες Πληροφορικής και
+              Υπολογιστών».
+              Από το ακαδ. έτος 2020-2021 λειτουργεί και Πρόγραμμα Μεταπτυχιακών Σπουδών με τίτλο "Τεχνολογίες
+              Εμβύθισης-Καινοτομία στην Εκπαίδευση την Επιμόρφωση και το Σχεδιασμό Παιχνιδιών".
+              Από το ακαδ. έτος 2020-2021 επίσης λειτουργεί στο Τμήμα και ο 3ος κύκλος Σπουδών (Πρόγραμμα Διδακτορικών
+              Σπουδών).
+              Στους στόχους του Τμήματος είναι η υψηλή εκπαίδευση και κατάρτιση των φοιτητών σε αντικείμενα της
+              Πληροφορ­ικής και των Υπολογιστών μέσω της διδασκαλίας και της έρευνας. Η δημιουργία αποφοίτων που με την
+              άρτια κατάρτισή τους θα εξασφαλίσουν την επιστημονική και επαγγελματική τους εξέλιξη και σταδιοδρομία και
+              θα συμβάλλουν δημιουργικά σε αναπτυξιακά ή/και ερευνητικά έργα της νέας ψηφιακής εποχής. Οι πτυχιούχοι του
+              Τμήματος μπορούν να απασχοληθούν τόσο στον ιδιωτικό, όσο και στον δημόσιο τομέα, είτε αυτοδύναμα, είτε σε
+              συνεργασία με άλλους επαγγελματίες και επιστή­μο­νες, σε όλους τους τομείς σχεδιασμού, ανάπτυξης και
+              αξιοποίησης Συστημάτων Πληροφορικής και Υπολογιστών. <br><br>
+              Στο πλαίσιο επίτευξης αυτών των στόχων το Τμήμα Πληροφορικής:
+            </p>
+            <ul>
+              <li> Αναπτύσσει στους φοιτητές του τις δεξιότητες που θα τους καταστήσουν ανταγω­νι­στικούς σε εθνικό και
+                διεθνές περιβάλλον.</li>
+              <li>Παρακολουθεί τις διεθνείς εξελίξεις στον επιστημονικό και εκπαιδευτικό τομέα και προετοιμάζεται και
+                προσαρμόζεται σύμφωνα με τις μεταβαλλόμενες εκπαιδευ­τικές, οικονομικές και κοινωνικές συνθήκες σε
+                εθνικό και διεθνές περι­βάλ­λον.</li>
+              <li>Διεξάγει θεωρητική και εφαρμοσμένη έρευνα.</li>
+              <li>Παράγει σημαντικό αριθμό πρωτότυπων δημοσιεύσεων σε έγκριτα διεθνή επιστημονικά περιοδικά και
+                συνέδρια.</li>
+              <li>Διαθέτει τέσσερα θεσμοθετημένα ερευνητικά εργαστήρια που καλύπτουν όλους τους τομείς της Πληροφορικής
+                και των Υπολογιστών.</li>
+              <li>Έχει αναλάβει σημαντικό αριθμό χρηματοδοτούμενων ερευνητικών και αναπτυξιακών προγραμμάτων τόσο από
+                την Ευρωπαϊκή Ένωση όσο και από Ελληνικούς φορείς, ενώ πολλά από αυτά βρίσκονται σε εξέλιξη.</li>
+              <li>Αναπτύσσει συνεργασίες με ανώτατα εκπαιδευτικά ιδρύματα της χώρας και του εξωτερικού.</li>
+              <li>Συνεργάζεται με φορείς, εταιρίες, οργανισμούς και τη βιομηχανία, τόσο σε τοπικό επίπεδο όσο και
+                ευρύτερα, με σκοπό την έρευνα και την ανάπτυξη. Για την επίτευξη αυτών των στόχων, το τμήμα διαθέτει
+                σημαντικό εκπαιδευτικό και ερευνητικό εξοπλισμό. Πλήρως εξοπλι­σμένους εργαστηριακούς χώρους για τη
+                διδασκαλία και την έρευνα σε θέματα που σχετίζονται με την πληροφορική και τους υπολογιστές,
+                ηλεκτρονικά,ενσωμα­τω­μένα συστήματα και ρομποτική.</li>
+            </ul>
+          </div>
+          <div id="tab2" class="tab-pane fade">
+            <h3 style="text-align: center;">ΠΟΛΙΤΙΚΗ ΠΟΙΟΤΗΤΟΣ ΤΜΗΜΑΤΟΣ</h3>
+            <p style="text-align: justify;">Το Τμήμα Πληροφορικής της ΣΘΕ του Διεθνούς Πανεπιστημίου της Ελλάδος, έχει
+              υιοθετήσει μία πολιτική ποιότητας της ακαδημαϊκής μονάδας η οποία είναι ευθυγραμμισμένη με την γενική
+              αναθεωρημένη πολιτική του Διεθνούς Πανεπιστημίου της Ελλάδος.
+              <br><br>Συγκεκριμένα, η πολιτική ποιότητας του Τμήματος Πληροφορικής, εφαρμόζεται στους δύο παρακάτω
+              διακριτούς άξονες:
+              <br><br><b>Α. Πολιτική Ποιότητας Τρεχουσών Λειτουργιών και Υπηρεσιών</b>
+              <br><br>Προς αυτή την κατεύθυνση επιδιώκεται:
+            </p>
+            <ul>
+              <li>Η συνεχής αναμόρφωση και βελτίωση των Προπτυχιακών και Μεταπτυχιακών προγραμμάτων σπουδών του
+                Ιδρύματος. Με τον τρόπο αυτό επιδιώκεται η δημιουργία σύγχρονων προγραμμάτων σπουδών που δημιουργούν
+                ανταγωνιστικό πλεονέκτημα στους προπτυχιακούς και μεταπτυχιακούς αποφοίτους του Τμήματος.</li>
+              <li>Η βελτίωση της μάθησης των φοιτητών, με στόχο την αύξηση του επιπέδου γνώσεων των φοιτητών, ώστε να
+                είναι ικανοί να ανταπεξέλθουν στις υψηλές απαιτήσεις της αγοράς εργασίας αλλά και των ανώτερων κύκλων
+                σπουδών (2ος και 3ος).</li>
+              <li>Η υποστήριξη των νέων ερευνητών μέσω του ΠΜΣ ερευνητικού χαρακτήρα και του προγράμματος Διδακτορικών
+                Σπουδών που λειτουργούν στο Τμήμα.</li>
+              <li>Η προσέλκυση νέων ερευνητών υψηλού επιπέδου της ημεδαπής ή αλλοδαπής, για την εκπόνηση
+                μεταδιδακτορικής έρευνας στα πλαίσια λειτουργίας του προγράμματος μεταδιδακτορικής έρευνας που
+                λειτουργεί στο Τμήμα.</li>
+              <li>Η διάχυση των ερευνητικών ευρημάτων, με την ενθάρρυνση συμμετοχής σε διεθνή συνέδρια των προπτυχιακών,
+                μεταπτυχιακών φοιτητών και των υποψήφιων διδακτόρων του Τμήματος. Επίσης, προς αυτή την κατεύθυνση
+                επιδιώκεται η συμμετοχή των φοιτητών και των τριών κύκλων σπουδών στην συγγραφή επιστημονικών
+                δημοσιεύσεων.</li>
+              <li>Η ενίσχυση του πολυεπίπεδου ερευνητικού έργου στο Τμήμα, μέσω των 4 θεσμοθετημένων ερευνητικών
+                εργαστηρίων και της μίας ερευνητικής ομάδας, που δραστηριοποιούνται στο Τμήμα.</li>
+              <li>Η αποτελεσματική οργάνωση των υπηρεσιών και η ανάπτυξη και διατήρηση των υποδομών.</li>
+              <li>Η ενίσχυση συνεργασιών με άλλα ιδρύματα του εξωτερικού και του εσωτερικού, η διάχυση και η ενίσχυση
+                ερευνητικών έργων και συνεργιών, καθώς επίσης και η βελτίωση της παραγωγής ερευνητικού έργου.</li>
+              <li>Η προαγωγή και υποστήριξη της καινοτομίας στο εκπαιδευτικό έργο, μέσω της χρήσης νέων ψηφιακών
+                τεχνολογιών.</li>
+              <li>Η προβολή του Ιδρύματος στην Ελλάδα και Διεθνώς.</li>
+              <li>Η αξιοποίηση εναλλακτικών πηγών χρηματοδότησης (συμμετοχή σε διεθνή προγράμματα, αυτοχρηματοδοτούμενα
+                προγράμματα σπουδών, χορηγίες/δωρεές).</li>
+            </ul>
+            <p>
+              <br><b>Β. Πολιτική Ποιότητας βάσει Στρατηγικού Σχεδίου</b>
+              <br><br>Προς αυτή την κατεύθυνση επιδιώκεται:
+            </p>
+            <ul>
+              <li>O <b>ψηφιακός μετασχηματισμός</b> των λειτουργιών και υπηρεσιών του Τμήματος. Το Τμήμα Πληροφορικής
+                διαθέτει το πλεονέκτημα της γνώσης των ψηφιακών μέσων και του τρόπου που αυτά μπορούν να εφαρμοστούν
+                προκειμένου να επιτευχθεί ένας υψηλός βαθμός ψηφιακού μετασχηματισμού στο Τμήμα.</li>
+              <li>Η <b>ενίσχυση της έρευνας και της καινοτομίαςς</b> μέσω διεκδίκησης ερευνητικών και αναπτυξιακών
+                ευρωπαϊκών έργων προκειμένου να διατηρηθεί το ερευνητικό δυναμικό της ευρύτερης περιοχής της Περιφέρειας
+                Ανατολικής Μακεδονίας και Θράκης και να ενισχυθεί η προσπάθεια παραγωγικής ανασυγκρότησης της χώρας μέσω
+                ανάπτυξης καινοτόμων προϊόντων.</li>
+              <li>Η <b>διεθνοποίηση</b> του Τμήματος μέσω στρατηγικών συνεργειών με ακαδημαϊκά, ερευνητικά ιδρύματα και
+                οργανισμούς του εξωτερικού προκειμένου να εγκαθιδρυθεί ένα κανάλι ανταλλαγής γνώσεων, τεχνολογιών και
+                ερευνητικού δυναμικού.</li>
+              <li>Η <b>ενίσχυση του κοινωνικού ρόλου</b> του Τμήματος κυρίως στην Περιφέρεια Ανατολικής Μακεδονίας και
+                Θράκης, στην οποία αποτελεί το μοναδικό Τμήμα Πληροφορικής. Το Τμήμα παράγει επωφελές για την κοινωνία
+                έργο μέσα από το εκπαιδευτικό και ερευνητικό του αποτύπωμα σε τομείς εφαρμογών της πληροφορικής όπως η
+                υγεία, η πρωτογενής παραγωγή, το περιβάλλον κ.λ.π. Η στόχευση στην ανάπτυξη συνεργασιών με κοινωνικούς
+                φορείς θα συμβάλλει προς αυτή την κατεύθυνση.</li>
+            </ul>
+          </div>
+          <div id="tab3" class="tab-pane fade">
+            <h3 style="text-align: center;">ΟΡΓΑΝΩΣΗ</h3>
+            <p style="text-align: justify;">Το Τμήμα Πληροφορικής της Σχολής Θετικών Επιστημών του Διεθνούς
+              Πανεπιστημίου της Ελλάδος διοικείται από τη Συνέλευση και τον Πρόεδρο του Τμήματος (Ν. 4485/2017).
+              <br><br>Ο Πρόεδρος του Τμήματος έχει την ευθύνη για την εύρυθμη λειτουργία του Τμήματος και την επίλυση
+              των προβλημάτων που προκύπτουν. Καλεί τη Συνέλευση του Τμήματος σε Συνεδρίαση σε τακτά χρονικά διαστήματα
+              προκειμένου να συζητηθούν τρέχοντα θέματα που αφορούν τη λειτουργία του Τμήματος και να ληφθούν αποφάσεις
+              εφόσον αυτές εμπίπτουν στις αρμοδιότητες της Συνέλευσης ή να ετοιμαστούν κατάλληλα ώστε να ληφθούν
+              αποφάσεις από ανώτερα όργανα του Διεθνούς Πανεπιστημίου της Ελλάδος. Σε περίπτωση απουσίας του Προέδρου ή
+              αδυναμίας εκτέλεσης των καθηκόντων του αντικαθίσταται προσωρινά από τον Αναπληρωτή Πρόεδρο του Τμήματος.
+              <br><br>Η Συνέλευση του Τμήματος είναι υπεύθυνη:
+            </p>
+            <ul>
+              <li>Για τον ορισμό των διαφορετικών Επιτροπών που απαιτούνται στο Τμήμα όπως φαίνεται στο παρακάτω
+                ΟΡΓΑΝΟΓΡΑΜΜΑ.</li>
+              <li>Για τις αναθέσεις μαθημάτων στο μόνιμο προσωπικό.</li>
+              <li>Για τις προσλήψεις έκτακτου προσωπικό προκειμένου να καλυφθούν οι διδακτικές και όχι μόνο ανάγκες στο
+                Τμήμα.</li>
+              <li>Για την πρακτική άσκηση στο Τμήμα.</li>
+              <li>Για θέματα που αφορούν το μόνιμο προσωπικό (άδειες, μετακινήσεις, κ.τ.λ.)</li>
+              <li>Για θέματα που αφορούν φοιτητές και σχετίζονται με την εκπαιδευτική διαδικασία.</li>
+              <li>Για θέματα που σχετίζονται με τον 2ο κύκλο σπουδών -Το Μεταπτυχιακό Πρόγραμμα Σπουδών Ερευνητικού
+                Χαρακτήρα.</li>
+              <li>Για θέματα που σχετίζονται με τον 3ο κύκλο σπουδών που οδηγεί στη λήψη Διδακτορικού Διπλώματος.</li>
+              <li>Για την ίδρυση των θεσμοθετημένων ερευνητικών εργαστηρίων.</li>
+              <li>Γενικά για όλα τα θέματα που σχετίζονται με τη λειτουργία του τμήματος.</li>
+            </ul>
+            <p style="text-align: justify;"><br>Οι αρμοδιότητες του Προέδρου και της Συνέλευσης παρουσιάζονται με
+              λεπτομέρειες στο Ν. 4485/2017.
+              <br><br>Η γραμματεία του Τμήματος συνεργάζεται με τον Πρόεδρο και σε περίπτωση απουσίας του με τον
+              Αντιπρόεδρο καθώς και τα μέλη της Συνέλευσης για την επίλυση προβλημάτων που αφορούν το Τμήμα. Η
+              γραμματεία επίσης αναλαμβάνει όλο το φόρτο επικοινωνίας με τους φοιτητές και εξυπηρέτησής τους (αιτήματα,
+              βεβαιώσεις κ.τ.λ.).
+              <br><br>Το παρακάτω ΟΡΓΑΝΟΓΡΑΜΜΑ παρουσιάζει τον τρόπο με τον οποίο γίνεται η διαχείριση των διαφορετικών
+              θεμάτων που σχετίζονται με την εύρυθμη λειτουργία του Τμήματος.
+              <br><br><a href="https://cs.ihu.gr/cs_hosting/images/pagesections/7.png" target="_blank">Δείτε εδώ το
+                ΟΡΓΑΝΟΓΡΑΜΜΑ</a>
+            </p>
+          </div>
+          <div id="tab4" class="tab-pane fade">
+            <h3 style="text-align: center;">ΕΠΑΓΓΕΛΜΑΤΙΚΗ ΑΠΟΚΑΤΑΣΤΑΣΗ</h3>
+            <p style="text-align: justify;">Το νεοσύστατο Τμήμα Πληροφορικής στο Διεθνές Πανεπιστήμιο της Ελλάδος με
+              έδρα την Καβάλα, που σύμφωνα με υπουργική απόφαση (ΦΕΚ 2656Β/1-7-2019) είναι αντίστοιχο των τμημάτων
+              Πληροφορικής των Ελληνικών ΑΕΙ, διαθέτει μια ισχυρή βάση στην αγορά της Πληροφορικής μιας και αποτελεί
+              διάδοχο των τμημάτων της Βιομηχανικής Πληροφορικής και των Μηχανικών Υπολογιστών που οι απόφοιτοί μας τα
+              τελευταία 20 χρόνια έχουν στελεχώσει σημαντικές εταιρείες πληροφορικής σε Ελλάδα και Εξωτερικό, όπως και
+              διάφορες δημόσιες υπηρεσίες και εκπαιδευτικά ιδρύματα της χώρας.
+              <br><br>Αν και η αγορά εργασίας έχει τους δικούς της κανόνες αυτορύθμισης με βάση τις ατομικές γνώσεις και
+              δεξιότητες των αποφοίτων, η επαγγελματική κατοχύρωση των πτυχιούχων του Τμήματος Πληροφορικής περιγράφεται
+              επαρκώς στα άρθρα 2 και 3 του προεδρικού διατάγματος υπ’ αριθμόν 44 (αριθμός ΦΕΚ 58, 8 Απριλίου 2009) ως
+              εξής:
+              <br><br>Οι πτυχιούχοι Πανεπιστημιακής Εκπαίδευσης του Τμήματος Πληροφορικής, με βάση τις γενικές και τις
+              εξειδικευμένες επιστημονικές γνώσεις που απέκτησαν κατά τη διάρκεια των σπουδών τους, διαθέτουν γνωστικό
+              υπόβαθρο συναφές με το υλικό και το λογισμικό για τη συγκέντρωση, ταξινόμηση, επεξεργασία και μετάδοση της
+              πληροφορίας και έχουν την ικανότητα να ασχοληθούν ενδεικτικά με δραστηριότητες όπως μελέτη, σχεδίαση,
+              ανάλυση, υλοποίηση, εγκατάσταση, επίβλεψη, λειτουργία, αξιολόγηση, διενέργεια πραγματογνωμοσύνης και
+              πιστοποίηση στους επιστημονικούς τομείς:
+            </p>
+            <ul>
+              <li>του υλικού και λογισμικού των ηλεκτρονικών υπολογιστών,</li>
+              <li>της πληροφορικής,</li>
+              <li>των συστημάτων και δικτύων επικοινωνιών, τηλεπικοινωνιακών υπηρεσιών και εφαρμογών διαδικτύου,</li>
+              <li>των συστημάτων και εφαρμογών, γραφικών, επεξεργασίας σημάτων, επεξεργασίας εικόνας και επεξεργασίας
+                ομιλίας.</li>
+            </ul>
+            <p style="text-align: justify;"><br>Ο απόφοιτος του Τμήματος Πληροφορικής του ΔΙΠΑΕ εφόσον έχει ολοκληρώσει
+              επιτυχώς το Πρόγραμμα Σπουδών για την Παιδαγωγική και Διδακτική Επάρκεια θα αποκτά Πιστοποιητικό
+              Παιδαγωγικής και Διδακτικής Επάρκειας το οποίο, μαζί με τον βασικό τίτλο σπουδών, θα του επιτρέπει τη
+              συμμετοχή στο διαγωνισμό επιλογής εκπαιδευτικών πρωτοβάθμιας και δευτεροβάθμιας εκπαίδευσης ή, πέραν των
+              θεσμών της δημόσιας εκπαίδευσης, σε άλλη θέση στην οποία απαιτούνται πιστοποιημένα προσόντα εκπαιδευτικού.
+              <br><br>Με την ολοκλήρωση του προγράμματος προπτυχιακών σπουδών, οι απόφοιτοι του Τμήματος Πληροφορικής σε
+              συνδυασμό με τις προσωπικές τους επιδόσεις, γίνονται δεκτοί σε μεταπτυχιακά προγράμματα σπουδών και έχουν
+              πάρα πολύ καλές προοπτικές επαγγελματικής σταδιοδρομίας στον ιδιωτικό και στον δημόσιο τομέα τόσο στην
+              Ελλάδα, όσο και στο εξωτερικό, όπου υπάρχουν διαθέσιμες θέσεις εργασίας. Έχουν επίσης τη δυνατότητα να
+              εργασθούν σε ερευνητικά - αναπτυξιακά έργα που εκτελούνται εντός του Τμήματος. Το Τμήμα ενθαρρύνει τη
+              σύνδεση με την αγορά εργασίας μέσω κατάλληλων δράσεων ενημέρωσης των φοιτητών και την εκπόνηση πρακτικής
+              άσκησης.
+              <br><br>Οι επαγγελματικές προοπτικές είναι άμεσα συνυφασμένες με την προσπάθεια που έχει καταβάλει ο
+              απόφοιτος κατά τη διάρκεια των απαιτητικών σπουδών του αλλά και ευκαιριών που ανοίγουν καθημερινά στον
+              ιδιαίτερα ελπιδοφόρο χώρο της Πληροφορικής και των νέων τεχνολογιών. Οι απόφοιτοι μας επιπλέον δύνανται να
+              ασχοληθούν ενδεικτικά με:
+            </p>
+            <ul>
+              <li> τη διδασκαλία σε Ανώτατα Εκπαιδευτικά Ιδρύματα (ΑΕΙ), τη δευτεροβάθμια εκπαίδευση και την τεχνική και
+                επαγγελματική κατάρτιση, δημόσια και ιδιωτική, σε θεωρητικό, τεχνολογικό και εφαρμοσμένο επίπεδο στους
+                επιστημονικούς τομείς της πληροφορικής και των τηλεπικοινωνιών που απαριθμούνται παραπάνω,</li>
+              <li>την έρευνα σε δημόσια και ιδιωτικά ερευνητικά κέντρα στους επιστημονικούς τομείς που απαριθμούνται
+                παραπάνω αντίστοιχα σε θεωρητικό, τεχνολογικό και εφαρμοσμένο επίπεδο.</li>
+              <li>την προσφορά υπηρεσιών σε οργανικές μονάδες πληροφορικής, δικτύων, μηχανοργάνωσης και τεχνικών
+                υπηρεσιών υπουργείων, δημοσίων οργανισμών, υπηρεσιών και επιχειρήσεων, σε επιχειρήσεις ηλεκτρονικών
+                επικοινωνιών, στον τραπεζικό, ασφαλιστικό, ιατρικό τομέα, στα μέσα μαζικής ενημέρωσης, στις εταιρείες
+                παραγωγής και επεξεργασίας οπτικοακουστικού υλικού, στις μεταφορές, τη ναυτιλία, τον τουρισμό, σε
+                εταιρείες συμβούλων επιχειρήσεων και εταιρείες υψηλής τεχνολογίας.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- ./Tabs -->
+    </div>
+  </section>
+
+  <!-- Labs -->
+  <section id="lab" class="lab-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>ΕΡΕΥΝΗΤΙΚΑ ΕΡΓΑΣΤΗΡΙΑ</h2>
+          <p>Το τμήμα Πληροφορικής διαθετεί τέσσερα θεσμοθετημένα εργαστήρια για τη διεξαγωγή βασικής και εφαρμοσμένης
+            έρευνας.
+          </p>
+          <span class="line"></span>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Start Single Lab Post -->
+        <div class="col-md-4 col-sm-6">
+          <div class="single-lab-post">
+            <div class="single-lab-thumb"> <img
+                src="https://img.freepik.com/free-photo/html-css-collage-concept-with-person_23-2150062008.jpg" alt=""
+                class="img-responsive"> </div>
+            <div class="single-post-content">
+              <h4><a href="single-lab.html">ΑΕΤΜΑ</a></h4>
+              <p style="text-align: justify; text-justify: inter-word;">Το εργαστήριο AETMA ερευνά την ανάπτυξη
+                εκπαιδευτικού λογισμικού, τη συνδυασμένη και εξ αποστάσεως εκπαίδευση, την κινητή εκμάθηση, την εφαρμογή
+                της ενισχυμένης πραγματικότητας και της τεχνολογίας που μπορεί να φορεθεί, την ανάπτυξη εφαρμογών για
+                κινητά και τη μελέτη των εικονικών κόσμων 2D και 3D στην εξ αποστάσεως μάθηση.
+              </p>
+              <a class="lab-btn" href="http://aetma.teiemt.gr/" target="_blank">Δείτε Περισσότερα</a>
+            </div>
+          </div>
+        </div>
+        <!-- End Single Lab Post -->
+        <!-- Start Single Lab Post -->
+        <div class="col-md-4 col-sm-6">
+          <div class="single-lab-post">
+            <div class="single-lab-thumb"> <img
+                src="https://img.freepik.com/free-photo/ai-nuclear-energy-background-future-innovation-disruptive-technology_53876-129783.jpg"
+                alt="" class="img-responsive"> </div>
+            <div class="single-post-content">
+              <h4><a href="single-lab.html">ΑΜΑ</a></h4>
+              <p style="text-align: justify; text-justify: inter-word;">
+                Το εργαστήριο επικεντρώνεται στη μελέτη και σχεδίαση μηχανών που αλληλεπιδρούν με τον άνθρωπο, όπως
+                συσκευές επικοινωνίας, υπολογιστές και ρομπότ. Ο στόχος είναι η δημιουργία υλικού και λογισμικού που να
+                επιτρέπει την απρόσκοπτη συνεργασία μεταξύ ανθρώπου και μηχανής. Το πλήθος και η πολυπλοκότητα τους
+                αυξάνονται συνεχώς.
+              </p>
+              <a class="lab-btn" href="http://humain-lab.teiemt.gr/?lang=el" target="_blank">Δείτε Περισσότερα</a>
+            </div>
+          </div>
+        </div>
+        <!-- End Single Lab Post -->
+        <!-- Start Single Lab Post -->
+        <div class="col-md-4 col-sm-6">
+          <div class="single-lab-post">
+            <div class="single-lab-thumb"> <img
+                src="https://img.freepik.com/free-photo/top-view-circuit-board-close-up_23-2149174319.jpg" alt=""
+                class="img-responsive"> </div>
+            <div class="single-post-content">
+              <h4><a href="single-lab.html">Ε.ΒΕ.ΕΣ</a></h4>
+              <p style="text-align: justify; text-justify: inter-word;">Το Ε.ΒΕ.ΕΣ ερευνά και αναπτύσσει εφαρμογές
+                Industrial IoT και Cyber-Physical Systems, με μεθοδολογίες σχεδιασμού πολύπλοκων συστημάτων και
+                εκπαιδευτικών προγραμμάτων. Ερευνά και αναπτύσσει καινοτόμες εκπαιδευτικές μεθοδολογίες
+                συνεργατικής μάθησης, εφαρμογές λογισμικού, εργαλεία CAD ενσωματωμένων συστημάτων. </p>
+              <a class="lab-btn" href="http://iees.cs.ihu.gr/" target="_blank">Δείτε Περισσότερα </a>
+            </div>
+          </div>
+        </div>
+        <!-- End Single Lab Post -->
+        <!-- Start Single Lab Post -->
+        <div class="col-md-4 col-sm-6">
+          <div class="single-lab-post">
+            <div class="single-lab-thumb"> <img
+                src="https://img.freepik.com/free-photo/close-up-crystal-globe_1150-17696.jpg" alt=""
+                class="img-responsive"> </div>
+            <div class="single-post-content">
+              <h4><a href="single-lab.html">WeSIS</a></h4>
+              <p style="text-align: justify; text-justify: inter-word;">Το εργαστήριο WeSIS στοχεύει στη διεξαγωγή
+                βασικής και εφαρμοσμένης έρευνας μέσω εθνικών και διεθνών ερευνητικών προγραμμάτων. Αναλαμβάνουμε το
+                σχεδιασμό, τη διαβούλευση και την ανάπτυξη έργων που ανταποκρίνονται στις ανάγκες της κοινωνίας. </p>
+              <a class="lab-btn" href="https://wesis.cs.ihu.gr/" target="_blank">Δείτε Περισσότερα </a>
+            </div>
+          </div>
+        </div>
+        <!-- End Single Lab Post -->
+      </div>
+    </div>
+  </section>
+  <!-- Labs End -->
+
+  <!-- Research -->
+  <div class="research">
+    <div class="container">
+      <div class="text">
+        <h2 class="h2">ΠΛΗΡΟΦΟΡΙΕΣ ΕΡΕΥΝΑΣ <br> & ΑΝΑΠΤΥΞΗΣ</h2>
+      </div>
+      <div class="button-container">
+        <a class="button" href="https://www.cs.ihu.gr/research_teams.xhtml" target="_blank">ΕΡΕΥΝΤΙΚΕΣ ΟΜΑΔΕΣ</a>
+        <a class="button" href="https://www.cs.ihu.gr/research_fields.xhtml" target="_blank">ΠΕΔΙΑ ΕΡΕΥΝΑΣ</a>
+        <a class="button" href="https://www.cs.ihu.gr/research_projects.xhtml" target="_blank">ΕΡΕΥΝΤΙΚΑ ΕΡΓΑ</a>
+      </div>
+    </div>
+  </div>
+  <!-- Research End -->
+
+  <!-- Studies Start-->
+  <section id="studies" class="studies">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>ΣΠΟΥΔΕΣ</h2>
+          <p>Μάθετε περισσότερα σχετικά με τα Προγράμματα Σπουδών του Τμήματος</p>
+          <span class="line"></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="studies-callouts">
+          <div class="col-sm-4">
+            <div class="single-studies-box"> <i class="lnr lnr-graduation-hat"></i>
+              <div class="clearfix"></div>
+              <a href="https://www.cs.ihu.gr/courses.xhtml" target="_blank">
+                <h4>ΠΡΟΠΤΥΧΙΑΚΑ</h4>
+              </a>
+              <p>Προγράμματα Προπτυχιακών Σπουδών του Τμήματος Πληροφορικής</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="single-studies-box"> <i class="lnr lnr-graduation-hat"></i>
+              <div class="clearfix"></div>
+              <a href="https://www.cs.ihu.gr/master.xhtml" target="_blank">
+                <h4>ΜΕΤΑΠΤΥΧΙΑΚΑ</h4>
+              </a>
+              <p>Προγράμματα Μεταπτυχιακών Σπουδών του Τμήματος Πληροφορικής</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="single-studies-box"> <i class="lnr lnr-graduation-hat"></i>
+              <div class="clearfix"></div>
+              <a href="https://www.cs.ihu.gr/doctorate.xhtml" target="_blank">
+                <h4>ΔΙΔΑΚΤΟΡΙΚΑ</h4>
+              </a>
+              <p>Προγράμματα Διδακτορικών Σπουδών του Τμήματος Πληροφορικής</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Studies End -->
+
+
+  <!-- Portfolio Start -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>ΠΟΡΤΦΟΛΙΟ</h2>
+          <p>Περιηγηθείτε εικονικά στο τμήμα!</span></p>
+          <span class="line"></span>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Filters -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <ul class="portfolio-filter">
+            <li class="filter active" data-filter="*">ΟΛΑ</li>
+            <li class="filter" data-filter=".rooms">ΑΙΘΟΥΣΕΣ</li>
+            <li class="filter" data-filter=".labs">ΕΡΓΑΣΤΗΡΙΑ</li>
+            <li class="filter" data-filter=".library">ΒΙΒΛΙΟΘΗΚΗ</li>
+            <li class="filter" data-filter=".club">ΛΕΣΧΗ</li>
+          </ul>
+          <!-- /Portfolio Filters -->
+          <!-- Portfolio Wrap -->
+          <div class="row portfolio-container">
+            <!-- single portfolio -->
+            <div class="col-md-4 col-sm-6 col-xs-12 post labs"> <a href="#post_id-1"> <img
+                  src="/images/portfolio/p01.jpg" alt="">
+                <div class="post-inner">
+                  <div class="post-info">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </a>
+              <div id="post_id-1" class="mfp-hide post-popup"> <img src="/images/portfolio/p01.jpg" alt=""> </div>
+            </div>
+
+            <!-- single portfolio -->
+            <div class="col-md-4 col-sm-6 col-xs-12 post labs"> <a href="#post_id-2"> <img
+                  src="/images/portfolio/p02.jpg" alt="">
+                <div class="post-inner">
+                  <div class="post-info">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </a>
+              <div id="post_id-2" class="mfp-hide post-popup"> <img src="/images/portfolio/p02.jpg" alt=""> </div>
+            </div>
+            <!-- single portfolio -->
+            <div class="col-md-4 col-sm-6 col-xs-12 post rooms"> <a href="#work_id-3"> <img
+                  src="/images/portfolio/p03.jpg" alt="">
+                <div class="post-inner">
+                  <div class="post-info">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </a>
+              <div id="post_id-3" class="mfp-hide post-popup"> <img src="/images/portfolio/p03.jpg" alt=""> </div>
+            </div>
+            <!-- single portfolio -->
+            <div class="col-md-4 col-sm-6 col-xs-12 post rooms"> <a href="#work_id-4"> <img
+                  src="/images/portfolio/p04.jpg" alt="">
+                <div class="post-inner">
+                  <div class="post-info">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </a>
+              <div id="post_id-4" class="mfp-hide post-popup"> <img src="/images/portfolio/p04.jpg" alt=""> </div>
+            </div>
+            <!-- single portfolio -->
+            <div class="col-md-4 col-sm-6 col-xs-12 post library"> <a href="#work_id-5"> <img
+                  src="/images/portfolio/p05.jpg" alt="">
+                <div class="post-inner">
+                  <div class="post-info">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </a>
+              <div id="post_id-5" class="mfp-hide post-popup"> <img src="/images/portfolio/p05.jpg" alt=""> </div>
+            </div>
+            <!-- single portfolio -->
+            <div class="col-md-4 col-sm-6 col-xs-12 post club"> <a href="#work_id-6"> <img
+                  src="/images/portfolio/p06.jpg" alt="">
+                <div class="post-inner">
+                  <div class="post-info">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </a>
+              <div id="post_id-6" class="mfp-hide post-popup"> <img src="/images/portfolio/p06.jpg" alt=""> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Portfolio Wrap -->
+  </section>
+  <!-- Portfolio End -->
+
+
+
+
+  <!-- Contact Start -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>Επικοινωνηστε <span>Μαζι Μας</span></h2>
+          <p>Διεθνές Πανεπιστήμιο της Ελλάδος - Σχολή Θετικών Επιστημών - Τμήμα Πληροφορικής</p>
+          <span class="line"></span>
+        </div>
+        <div class="col-md-8 col-md-offset-2 col-sm-12">
+          <div class="contact-info">
+            <div class="col-md-4 col-sm-4">
+              <div class="single-contact"> <i class="lnr lnr-phone-handset"></i>
+                <h4>ΤΗΛΕΦΩΝΟ</h4>
+                <p>+30-2510462147 / 2341 </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="single-contact"> <i class="lnr lnr-map-marker"></i>
+                <h4>ΔΙΕΥΘΥΝΣΗ</h4>
+                <p>ΑΓΙΟΣ ΛΟΥΚΑΣ, 65404 ΚΑΒΑΛΑ</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="single-contact"> <i class="lnr lnr-envelope"></i>
+                <h4>Email</h4>
+                <p>info@cs.ihu.gr</p>
+              </div>
+            </div>
+          </div>
+          <!-- /end contact-info -->
+        </div>
+        <div class="col-md-8 col-md-offset-2 col-sm-12">
+          <form action="#" method="post" class="contact-form">
+            <div class="row">
+              <div class="form-group col-md-6 col-sm-6">
+                <input class="form-control" placeholder="Το όνομα σας*" required type="text">
+              </div>
+              <div class="form-group col-md-6 col-sm-6">
+                <input class="form-control" placeholder="Το Email σας*" required type="email">
+              </div>
+              <div class="form-group col-md-12 col-sm-12">
+                <textarea placeholder="Το μήνυμα σας*" class="form-control" rows="8" required></textarea>
+              </div>
+              <div class="col-md-12 col-sm-12">
+                <div class="action-submit text-center">
+                  <input class="btn btn-default btn-contact" value="Αποστολη Μηνυματος" type="submit">
+                </div>
+              </div>
+            </div>
+          </form>
+          <!-- /end contact-form -->
+        </div>
+      </div>
+    </div>
+    <!-- Google Map Start -->
+    <div class="google-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3014.3935630867068!2d24.375937415411617!3d40.929040929308826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14aeba5320b72bd1%3A0xc30420853816ff38!2zzpTOmc6VzpjOnc6VzqMgzqDOkc6dzpXOoM6ZzqPOpM6XzpzOmc6fIM6kzpfOoyDOlc6bzpvOkc6Uzp_OoyAtIM6azpHOks6RzpvOkQ!5e0!3m2!1sel!2sgr!4v1681218522704!5m2!1sel!2sgr"
+        allowfullscreen></iframe>
+    </div>
+    <!-- Google Map end -->
+  </section>
+  <!-- Contact End -->
+
+  <!-- Copy Rights Start -->
+  <footer>
+    <div class="container">
+      <p>&copy; Copyright
+        <script type="text/javascript">
+          var d = new Date();
+          document.write(d.getFullYear());
+        </script> MechmetEK | All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+  <!-- Copy Rights End -->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="assets/jquery/jquery-3.1.1.min.js"></script>
+
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/easing/jquery.easing.min.js"></script>
+  <script src="assets/isotope/jquery.isotope.js"></script>
+  <script src="assets/jquery/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/jquery/jquery.magnific-popup.min.js"></script>
+  <script src="assets/number-animation/jquery.animateNumber.min.js"></script>
+  <script src="assets/jquery/plugins.js"></script>
+  <script src="assets/owl-carousel/js/owl.carousel.js"></script>
+  <script src="assets/wow/wow.min.js"></script>
+  <script src="js/custom.js"></script>
 </body>
 
-</html> 
+</html>
