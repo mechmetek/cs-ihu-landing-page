@@ -407,17 +407,17 @@ a.slide-btn:hover {
 
 .slide-1,
 .text-slide {
-	background: url(/images/head/head1.jpg);
+	background: url(../cs-ihu-landing-page/images/head/head1.jpg);
 	background-size: cover
 }
 
 .slide-2 {
-	background: url(/images/head/head2.jpg);
+	background: url(../images/head/head2.jpg);
 	background-size: cover
 }
 
 .slide-3 {
-	background: url(/images/head/head3.jpg);
+	background: url(../images/head/head3.jpg);
 	background-size: cover
 }
 
@@ -891,7 +891,7 @@ a:hover {
 }
 
 .research {
-	background: url(/images/research.jpg) no-repeat fixed left top;
+	background: url(../images/research.jpg) no-repeat fixed left top;
 	margin: 0;
 	padding: 65px 0 66px;
 	position: relative;
@@ -1217,7 +1217,7 @@ ul.post-meta li {
 	float: left;
 	background: #f2f5f9;
 	padding: 57px 0 0;
-	background: url("/images/contact.jpg") no-repeat fixed left top;
+	background: url("../images/contact.jpg") no-repeat fixed left top;
 	z-index: 9;
 	position: relative;
 	text-align: center;
