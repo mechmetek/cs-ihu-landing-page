@@ -93,8 +93,23 @@
 
     //======= MAGNIFIC POPUP ========//
     $('.post a').magnificPopup({
-        type: 'inline'
-    });
+		type: 'inline',
+		mainClass: 'mfp-fade',
+		removalDelay: 300,
+		gallery: {
+		  enabled: true
+		},
+		arrowMarkup: '<button class="mfp-arrow mfp-arrow-%dir%" title="%title%"><img src="https://www.seekpng.com/png/detail/57-572816_gallery-left-arrow-left-arrow-white-icon.png"></button>'
+		,callbacks: {
+			titleSrc: function(item) {
+			  var title = item.el.attr('title');
+			  var description = item.el.find('img').attr('data-description');
+			  return '<div class="mfp-title">' + title + '</div><div class="mfp-description">' + description + '</div>';
+			}
+		  } 
+	});
+	  
+	
     /*------------------------------------------------------------------
     Navigation Hover effect
     ------------------------------------------------------------------*/
