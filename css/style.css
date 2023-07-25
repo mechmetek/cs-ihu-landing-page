@@ -807,7 +807,7 @@ a:hover {
 	margin: 0;
 	background: #001f46;
 	width: 100%;
-	height: 100vh;
+	height: 70vh;
 }
 
 .studies .section-title {
@@ -911,6 +911,11 @@ a:hover {
 
 .research .text {
 	margin-right: auto;
+}
+
+
+.research .text .mobile-break {
+	display: none;
 }
 
 .research .h2 {
@@ -1282,6 +1287,10 @@ ul.post-meta li {
 	text-align: center;
 }
 
+.contact .h2 .mobile-break {
+	display: none;
+}
+
 .contact h2 {
 	color: #fff;
 }
@@ -1479,11 +1488,11 @@ footer p {
 
 	/*** navigation ***/
 	.navbar-default .navbar-toggle .icon-bar {
-		background: #f8f8f8
+		background: #f8f8f8;
 	}
 
 	.menu-bg .navbar-toggle .icon-bar {
-		background: #fff
+		background: #fff;
 	}
 
 	.menu-bg .navbar-toggle {
@@ -1492,14 +1501,14 @@ footer p {
 	}
 
 	.navbar-toggle {
-		margin-right: 0;
-		margin-top: -34px;
+		margin-right: 20px;
+		margin-top: -50px;
 		border: none;
 	}
 
 	.menu-bg .navbar-collapse,
 	.navbar-collapse {
-		background: rgba(0, 0, 0, 0.9) none repeat scroll 0 0;
+		background: transparent;
 	}
 
 	.navbar-default .navbar-toggle:hover,
@@ -1536,22 +1545,51 @@ footer p {
 		box-shadow: none;
 	}
 
-	/*** banner ***/
-	.welcome-control {
-		display: none;
+	.logo {
+		margin-bottom: 10px;
 	}
 
+	/* Mobile Responsive Styles */
 	.single-slide-item h2 {
-		font-size: 24px;
-		line-height: 26px;
+		font-size: 30px;
+		line-height: 40px;
 	}
+
+	.welcome-control {
+		font-size: 1.8em;
+		/* Relative font size using em unit */
+		height: 40px;
+		line-height: 40px;
+		width: 40px;
+		top: calc(50% + 45px);
+		/* Move down by 40px from the center */
+	}
+
+	.single-featured i {
+		font-size: 25px;
+		height: 60px;
+		line-height: 60px;
+		width: 60px;
+	}
+
 
 	/*** callouts wrapper ***/
+
 	.callouts-inner {
 		top: 0;
 	}
 
-	/*** about us ***/
+	.message-description {
+		padding: 20px;
+	}
+
+	.message-description h2,
+	h4 {
+		font-size: 20px;
+	}
+
+
+	/*** about ***/
 	.about {
 		margin: 0;
 		padding: 40px 0 34px;
@@ -1576,17 +1614,86 @@ footer p {
 		margin: 0;
 	}
 
-	/*** counter ***/
-	.counter {
-		margin: 0 0 50px;
+	.about-tabs {
+		align-items: center;
 	}
 
-	.counters {
-		padding-bottom: 30px;
-		margin: 0;
+	.about-tabs .nav-tabs {
+		justify-content: center;
 	}
 
-	/*** Contact us ***/
+	.about-tabs .tab-content {
+		text-align: center;
+	}
+
+	/* Research */
+	.research .container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.research .text {
+		text-align: center;
+		margin-bottom: 20px;
+		margin-left: 20px;
+		/* Add space between title and buttons */
+	}
+
+	.research .text .desktop-break {
+		display: none;
+	}
+
+	.research .button-container {
+		flex-direction: column;
+	}
+
+	.research a.button {
+		margin: 10px 0;
+		text-align: center;
+	}
+
+	/*** Studies ***/
+	.studies {
+		min-height: 130vh;
+	}
+
+	.single-studies-box {
+		padding: 30px;
+		/* Adjust padding for mobile */
+	}
+
+
+	/*** Labs ***/
+	.lab-wrapper {
+		padding: 30px 0;
+	}
+
+	.lab-wrapper .section-title {
+		font-size: 20px;
+	}
+
+	.lab-wrapper .section-title p {
+		padding: 15px;
+	}
+
+	.lab-wrapper .single-lab-post {
+		margin-top: 20px;
+	}
+
+	.lab-wrapper .single-post-content {
+		padding: 15px;
+	}
+
+	.lab-wrapper a.lab-btn {
+		font-size: 11px;
+		padding: 6px 10px;
+	}
+
+	.post-meta a {
+		font-size: 12px;
+	}
+
+	/*** Contact ***/
 	.single-contact {
 		padding: 15px 0 30px;
 	}
@@ -1595,54 +1702,3 @@ footer p {
 		margin-bottom: 20px;
 	}
 }
-
-
-/*** Extra 
-
-.nav-tabs {
-	display: flex;
-	justify-content: left;
-	
-  }
-  
-  .nav-tabs > li.active > a, 
-  .nav-tabs > li.active > a:hover, 
-  .nav-tabs > li.active > a:focus {
-	background-color: #f7bb00;
-	color: white;
-  }
-  
-  .nav-tabs > li > a:hover, 
-  .nav-tabs > li > a:focus {
-	background-color: #f7bb00;
-	color: white;
-  }
-  
-  .tab-content {
-	padding: 15px;
-	border: none;
-  }
-  
-  .tab-pane {
-	display: none;
-	padding: 75px 0 70px;
-	
-  }
-  
-  ul {
-	list-style-type: square;
-	margin-left: 20px;
-  }
-  
-  li {
-	margin-bottom: 10px;
-  }
-  
-  a {
-	color: #f7bb00; /* sets link color 
-  }
-  
-  a:hover {
-	color: #001f46; /* sets link color when user hovers over it 
-  }
-  ***/
