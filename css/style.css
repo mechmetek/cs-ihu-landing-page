@@ -96,10 +96,10 @@ a:hover {
 	text-decoration: none;
 }
 
-body,
+/* body,
 html {
 	height: 100%
-}
+} */
 
 section h2 {
 	text-align: center;
@@ -349,7 +349,7 @@ section {
 .welcome-hero-area,
 .home-slider-area,
 .home-slider-area div {
-	height: 100%
+	height: 100vh;
 }
 
 .welcome-hero-area div.single-slide-item-table-cell,
